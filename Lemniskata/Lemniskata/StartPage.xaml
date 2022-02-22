@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage
+    x:Class="Lemniskata.StartPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="Aqua">
+    <!--  Pages can be added as references or inline  -->
+    <ContentPage Title="Tab 1">
+        <StackLayout>
+            <Label x:Name="header" Text="Языки программирования" FontSize="Large" />
+            <Picker x:Name="picker">
+                <Picker.Items>
+                    <x:String>C#</x:String>
+                    <x:String>C/C++</x:String>
+                    <x:String>JavaScript</x:String>
+                    <x:String>PHP</x:String>
+                </Picker.Items>
+            </Picker>
+            <WebView
+                HeightRequest="480"
+                MinimumHeightRequest="240"
+                MinimumWidthRequest="360"
+                Source="https://www.youtube.com/embed/BvyafSjv3xY"
+                WidthRequest="720" />
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Tab 2" />
+    <ContentPage Title="Tab 3" />
+</TabbedPage>
