@@ -17,6 +17,7 @@ namespace Lemniskata
         {
             InitializeComponent();
             On<Android>().SetToolbarPlacement(ToolbarPlacement.Bottom);
+            NavigationPage.SetHasBackButton(this, false);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lemniskata.Pages;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -13,9 +14,15 @@ namespace Lemniskata
         public MainPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private void gaa_Clicked(object sender, EventArgs e)
+        private void regbtn_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new RegistrationPage());
+        }
+
+        private void signbtn_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new StartPage());
         }

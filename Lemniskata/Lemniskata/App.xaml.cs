@@ -2,6 +2,8 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+
+[assembly: ExportFont("RedHatText-Regular.ttf", Alias = "RedHatText.ttf")]
 namespace Lemniskata
 {
     public partial class App : Application
