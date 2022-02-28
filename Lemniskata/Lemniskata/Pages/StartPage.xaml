@@ -3,15 +3,45 @@
     x:Class="Lemniskata.StartPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Visual="Material" SelectedTabColor="#616161" UnselectedTabColor="#373737">
-    <ContentPage Title="Tab 1" BackgroundImageSource="filmsmain.png">
-        <NavigationPage.TitleView>
-            <StackLayout Margin="0,0,15,0" Orientation="Horizontal">
-                <Image Source="logo.png" HorizontalOptions="Center"/>
-            </StackLayout>
-        </NavigationPage.TitleView>
-
+    SelectedTabColor="White"
+    UnselectedTabColor="#616161"
+    Visual="Material">
+    <NavigationPage.TitleView>
+        <StackLayout Margin="0,0,15,0" Orientation="Horizontal">
+            <Label
+                FontFamily="MaterialIconsFont"
+                FontSize="24"
+                HorizontalOptions="StartAndExpand"
+                Text="filter_alt"
+                VerticalOptions="CenterAndExpand">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Image
+                Aspect="AspectFit"
+                HeightRequest="50"
+                HorizontalOptions="StartAndExpand"
+                Source="logo.png"
+                WidthRequest="50" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage
+        x:Name="homepage"
+        Title="Home"
+        BackgroundImageSource="filmsmain.png"
+        IconImageSource="home.png">
+        <Label
+            x:Name="xad"
+            FontSize="20"
+            TextColor="White" />
     </ContentPage>
-    <ContentPage Title="Tab 2" />
-    <ContentPage Title="Tab 3" />
+    <ContentPage
+        Title="Search"
+        BackgroundImageSource="filmsmain.png"
+        IconImageSource="searchim.png" />
+    <ContentPage
+        Title="Profile"
+        BackgroundImageSource="mainprofim.png"
+        IconImageSource="profileim.png" />
 </TabbedPage>

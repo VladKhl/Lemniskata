@@ -19,5 +19,22 @@ namespace Lemniskata
             On<Android>().SetToolbarPlacement(ToolbarPlacement.Bottom);
             NavigationPage.SetHasBackButton(this, false);
         }
+
+        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            var action = await DisplayActionSheet("Выберите жанр:", "Закрыть", null, "Ужасы", "Комедия", "Фантастика");
+            if (action == "Ужасы")
+            {
+                homepage.BackgroundImageSource = "scary.png";
+            }
+            else if (action == "Комедия")
+            {
+                homepage.BackgroundImageSource = "comedy.png";
+            }
+            else if (action == "Фантастика")
+            {
+                homepage.BackgroundImageSource = "fantasy.png";
+            }
+        }
     }
 }

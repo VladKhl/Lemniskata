@@ -4,6 +4,7 @@ using Xamarin.Forms.Xaml;
 
 
 [assembly: ExportFont("RedHatText-Regular.ttf", Alias = "RedHatText.ttf")]
+[assembly: ExportFont("MaterialIcons-Regular.ttf", Alias = "MaterialIconsFont")]
 namespace Lemniskata
 {
     public partial class App : Application
