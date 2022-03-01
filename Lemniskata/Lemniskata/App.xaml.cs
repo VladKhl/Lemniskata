@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Lemniskata.db;
+using System;
+using System.IO;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,6 +11,19 @@ namespace Lemniskata
 {
     public partial class App : Application
     {
+        public const string DB_NAME = "films.db";
+        public static CRUDOperation db;
+        public static CRUDOperation Db
+        {
+            get
+            {
+                if (db == null)
+                {
+                    db = new CRUDOperation(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), DB_NAME));
+                }
+                return db;
+            }
+        }
         public App()
         {
             InitializeComponent();
