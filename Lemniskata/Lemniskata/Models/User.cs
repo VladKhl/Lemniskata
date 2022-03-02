@@ -10,12 +10,12 @@ namespace Lemniskata.Models
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
-        [Unique]
         [NotNull]
         public string Surname { get; set; }
         [NotNull]
         public string Name { get; set; }
         [NotNull]
+        [Unique]
         public string Login { get; set; }
         [NotNull]
         public string Password { get; set; }

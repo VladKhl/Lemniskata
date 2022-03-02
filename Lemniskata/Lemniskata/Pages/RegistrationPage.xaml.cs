@@ -26,7 +26,7 @@ namespace Lemniskata.Pages
         {
             try
             {
-                App.Db.SaveUser(new User(surname.Text, name.Text, login.Text, pass.Text, "Admin", impath));
+                App.Db.SaveUser(new User(surname.Text, name.Text, login.Text, pass.Text, "User", impath));
                 DisplayAlert("", "Вы успешно зарегистрировались", "Ok");
                 Navigation.PushAsync(new MainPage());
             }
