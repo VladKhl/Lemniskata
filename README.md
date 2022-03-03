@@ -18,3 +18,4 @@
   <img src="https://github.com/VladKhl/Lemniskata/blob/master/11.jpg" width="283" /> 
 </p>
 - На страничке обзора фильма так же будет присутствовать слайдер, с интересными моментами из фильма.
+
