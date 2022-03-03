@@ -12,7 +12,7 @@
 - При входе в приложение, будет возможность регистрации и авторизации.
  <p align="center"><img  src="https://github.com/VladKhl/Lemniskata/blob/master/0dd2579b-79f2-4650-91e1-86284b3146e9.jpg" width="30%"></p>
 
-- При регистрации пользователь заполняет все свои даннные(ФИО,фото,email,пароль,дата рождения,город).
+- При регистрации пользователь заполняет все свои даннные(ФИО,фото,email,пароль).
   <p float="left" align="center">
   <img src="https://github.com/VladKhl/Lemniskata/blob/master/12.jpg" width="270" />
   <img src="https://github.com/VladKhl/Lemniskata/blob/master/11.jpg" width="285" /> 
