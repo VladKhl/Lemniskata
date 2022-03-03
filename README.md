@@ -8,7 +8,6 @@
 
 
 <h2 align="center">Описание</h2>
-На страничке обзора фильма так же будет присутствовать слайдер, с интересными моментами из фильма.
 
 - При входе в приложение, будет возможность регистрации и авторизации.
  <p align="center"><img  src="https://github.com/VladKhl/Lemniskata/blob/master/0dd2579b-79f2-4650-91e1-86284b3146e9.jpg" width="30%"></p>
@@ -18,3 +17,4 @@
   <img src="https://github.com/VladKhl/Lemniskata/blob/master/12.jpg" width="270" />
   <img src="https://github.com/VladKhl/Lemniskata/blob/master/11.jpg" width="283" /> 
 </p>
+- На страничке обзора фильма так же будет присутствовать слайдер, с интересными моментами из фильма.
