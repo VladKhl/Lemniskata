@@ -7,11 +7,10 @@
 
 <h2 align="center">Описание</h2>
 При входе в приложение, будет возможность регистрации и авторизации.
-При регистрации пользователь заполняет все свои даннные(ФИО,фото,email,пароль,дата рождения,город).
 На страничке обзора фильма так же будет присутствовать слайдер, с интересными моментами из фильма.
 ### CSS
 
-- Each and every card is 100% css except the SVG of the suit in the center of the card,which is made by illustrator tool.
+- При регистрации пользователь заполняет все свои даннные(ФИО,фото,email,пароль,дата рождения,город).
 
   <p align="center"><img  src="https://github.com/VladKhl/Lemniskata/blob/master/12.jpg" width="30%"></p>
 
