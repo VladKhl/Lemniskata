@@ -18,7 +18,3 @@
   <img src="https://github.com/VladKhl/Lemniskata/blob/master/12.jpg" width="270" />
   <img src="https://github.com/VladKhl/Lemniskata/blob/master/11.jpg" width="283" /> 
 </p>
-
-  <p align="center"><img  src="https://github.com/VladKhl/Lemniskata/blob/master/12.jpg" width="30%"></p>
-
-src="https://github.com/VladKhl/Lemniskata/blob/master/11.jpg"
