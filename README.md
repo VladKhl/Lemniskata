@@ -13,5 +13,5 @@
 
 - Each and every card is 100% css except the SVG of the suit in the center of the card,which is made by illustrator tool.
 
-  <p align="center"><img  src="./readme_assets/4.png" width="30%"></p>
+  <p align="center"><img  src="https://github.com/VladKhl/Lemniskata/blob/master/12.jpg" width="30%"></p>
 
