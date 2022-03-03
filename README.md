@@ -15,7 +15,7 @@
 - При регистрации пользователь заполняет все свои даннные(ФИО,фото,email,пароль).
   <p float="left" align="center">
   <img src="https://github.com/VladKhl/Lemniskata/blob/master/2.jpg" width="270" />
-  <img src="https://github.com/VladKhl/Lemniskata/blob/master/11.jpg" width="285" /> 
+  <img src="https://github.com/VladKhl/Lemniskata/blob/master/3.jpg" width="270" /> 
 </p>
 
 - На страничке обзора фильма так же будет присутствовать слайдер, с интересными моментами из фильма.
