@@ -28,7 +28,7 @@
    <p align="center"><img  src="https://github.com/VladKhl/Lemniskata/blob/master/8.jpg" width="30%"></p>
    
    - Можно посмотреть трейлер выбранного фильма
-   <p1 align="center"><img  src=" https://github.com/VladKhl/Lemniskata/blob/master/5.jpg" width="30%"></p1>
+   <p align="center"><img  src="https://github.com/VladKhl/Lemniskata/blob/master/5.jpg" width="30%"></p>
    
   
    
