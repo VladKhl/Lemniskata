@@ -9,4 +9,9 @@
 При входе в приложение, будет возможность регистрации и авторизации.
 При регистрации пользователь заполняет все свои даннные(ФИО,фото,email,пароль,дата рождения,город).
 На страничке обзора фильма так же будет присутствовать слайдер, с интересными моментами из фильма.
+### CSS
+
+- Each and every card is 100% css except the SVG of the suit in the center of the card,which is made by illustrator tool.
+
+  <p align="center"><img  src="./readme_assets/4.png" width="30%"></p>
 
