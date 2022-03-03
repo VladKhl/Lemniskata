@@ -20,5 +20,10 @@
 
 - Можно выбирать фильмы по жанрам
  <p align="center"><img  src="https://github.com/VladKhl/Lemniskata/blob/master/4.jpg" width="30%"></p>
+ 
+ - Поиск фильмов по названию
+   <p align="center"><img  src="https://github.com/VladKhl/Lemniskata/blob/master/7.jpg" width="30%"></p>
+ 
+ 
 
 
