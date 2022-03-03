@@ -14,7 +14,7 @@
 
 - При регистрации пользователь заполняет все свои даннные(ФИО,фото,email,пароль).
   <p float="left" align="center">
-  <img src="https://github.com/VladKhl/Lemniskata/blob/master/2.jpg" width="270" />
+  <img src="https://github.com/VladKhl/Lemniskata/blob/master/2.jpg" width="271" />
   <img src="https://github.com/VladKhl/Lemniskata/blob/master/3.jpg" width="269" /> 
 </p>
 
