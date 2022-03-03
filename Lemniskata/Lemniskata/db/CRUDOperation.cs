@@ -35,16 +35,6 @@ namespace Lemniskata.db
             return db.Get<Movie>(id);
         }
 
-        public int DelUser(int id) 
-        { 
-            return db.Delete<User>(id); 
-        }
-
-        public int DelMovie(int id)
-        {
-            return db.Delete<Movie>(id);
-        }
-
         public int SaveUser(User user)
         {
             if (user.Id != 0 )
@@ -58,16 +48,16 @@ namespace Lemniskata.db
             }
         }
 
-        public int SaveMovie(Movie movie)
+        public int SaveMov(Movie mov)
         {
-            if (movie.Id != 0)
+            if (mov.Id != 0)
             {
-                db.Update(movie);
-                return movie.Id;
+                db.Update(mov);
+                return mov.Id;
             }
             else
             {
-                return db.Insert(movie);
+                return db.Insert(mov);
             }
         }
 

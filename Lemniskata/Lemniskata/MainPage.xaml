@@ -8,9 +8,9 @@
 
     <StackLayout>
         <Image
-            Margin="35,130,0,30"
-            HeightRequest="100"
-            Source="logo.png" />
+            Margin="0,130,0,50"
+            HeightRequest="50"
+            Source="logolem.png" />
         <Frame
             Margin="60,0"
             BackgroundColor="White"

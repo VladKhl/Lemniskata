@@ -6,42 +6,200 @@
     SelectedTabColor="White"
     UnselectedTabColor="#616161"
     Visual="Material">
-    <NavigationPage.TitleView>
-        <StackLayout Margin="0,0,15,0" Orientation="Horizontal">
-            <Label
-                FontFamily="MaterialIconsFont"
-                FontSize="24"
-                HorizontalOptions="StartAndExpand"
-                Text="filter_alt"
-                VerticalOptions="CenterAndExpand">
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
-                </Label.GestureRecognizers>
-            </Label>
-            <Image
-                Aspect="AspectFit"
-                HeightRequest="50"
-                HorizontalOptions="StartAndExpand"
-                Source="logo.png"
-                WidthRequest="50" />
-        </StackLayout>
-    </NavigationPage.TitleView>
     <ContentPage
         x:Name="homepage"
         Title="Home"
         BackgroundImageSource="filmsmain.png"
         IconImageSource="home.png">
-        <Label
-            x:Name="xad"
-            FontSize="20"
-            TextColor="White" />
+        <StackLayout>
+            <Frame BackgroundColor="#373737" CornerRadius="0" HeightRequest="30">
+                <StackLayout Orientation="Horizontal">
+                    <Label
+                FontFamily="MaterialIconsFont"
+                FontSize="24"
+                HorizontalOptions="StartAndExpand"
+                Text="filter_alt"
+                VerticalOptions="CenterAndExpand">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Image
+                Aspect="AspectFit"
+                HeightRequest="50"
+                HorizontalOptions="StartAndExpand"
+                Source="logolem.png"
+                WidthRequest="50" />
+                </StackLayout>
+            </Frame>
+            <ListView
+                x:Name="FilmsLstView"
+                ItemTapped="FilmsLstView_ItemTapped"
+                HasUnevenRows="True"
+                HorizontalOptions="CenterAndExpand"
+                SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="10">
+                                <Frame CornerRadius="20" BackgroundColor="White">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image
+                                            HeightRequest="100"
+                                            Source="{Binding Image}"
+                                            WidthRequest="150" />
+                                        <StackLayout>
+                                            <Label
+                                                FontSize="17"
+                                                Text="{Binding Namefilm}"
+                                                FontAttributes="Bold"
+                                                TextColor="Black" />
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label FontSize="15"
+                                                Text="Год:"
+                                                TextColor="Black" 
+                                                FontAttributes="Bold"/>
+                                                <Label FontSize="15"
+                                                Text="{Binding Year}"
+                                                TextColor="Black" />
+                                            </StackLayout>
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label FontSize="15"
+                                                Text="Страна:"
+                                                TextColor="Black" 
+                                                FontAttributes="Bold"/>
+                                                <Label FontSize="15"
+                                                Text="{Binding Country}"
+                                                TextColor="Black" />
+                                            </StackLayout>
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label FontSize="15"
+                                                Text="Жанр:"
+                                                TextColor="Black" 
+                                                FontAttributes="Bold"/>
+                                                <Label FontSize="15"
+                                                Text="{Binding Genre}"
+                                                TextColor="Black" />
+                                            </StackLayout>
+                                            <Label FontSize="15"
+                                                Text="Описание:"
+                                                TextColor="Black" 
+                                                FontAttributes="Bold"/>
+                                            <Label
+                                                FontSize="10"
+                                                Text="{Binding Description}"
+                                                TextColor="Black" 
+                                                FontFamily="RedHatText"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
     </ContentPage>
     <ContentPage
         Title="Search"
         BackgroundImageSource="filmsmain.png"
-        IconImageSource="searchim.png" />
+        IconImageSource="searchim.png">
+        <StackLayout>
+            <SearchBar x:Name="searchbtn" Placeholder="Search" SearchButtonPressed="searchbtn_SearchButtonPressed" BackgroundColor="White"/>
+            <ListView
+                x:Name="searchLstView"
+                HasUnevenRows="True"
+                ItemTapped="FilmsLstView_ItemTapped"
+                HorizontalOptions="CenterAndExpand"
+                SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="10">
+                                <Frame CornerRadius="20" BackgroundColor="White">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image
+                                            HeightRequest="100"
+                                            Source="{Binding Image}"
+                                            WidthRequest="150" />
+                                        <StackLayout>
+                                            <Label
+                                                FontSize="17"
+                                                Text="{Binding Namefilm}"
+                                                FontAttributes="Bold"
+                                                TextColor="Black" />
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label FontSize="15"
+                                                Text="Год:"
+                                                TextColor="Black" 
+                                                FontAttributes="Bold"/>
+                                                <Label FontSize="15"
+                                                Text="{Binding Year}"
+                                                TextColor="Black" />
+                                            </StackLayout>
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label FontSize="15"
+                                                Text="Страна:"
+                                                TextColor="Black" 
+                                                FontAttributes="Bold"/>
+                                                <Label FontSize="15"
+                                                Text="{Binding Country}"
+                                                TextColor="Black" />
+                                            </StackLayout>
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label FontSize="15"
+                                                Text="Жанр:"
+                                                TextColor="Black" 
+                                                FontAttributes="Bold"/>
+                                                <Label FontSize="15"
+                                                Text="{Binding Genre}"
+                                                TextColor="Black" />
+                                            </StackLayout>
+                                            <Label FontSize="15"
+                                                Text="Описание:"
+                                                TextColor="Black" 
+                                                FontAttributes="Bold"/>
+                                            <Label
+                                                FontSize="10"
+                                                Text="{Binding Description}"
+                                                TextColor="Black" 
+                                                FontFamily="RedHatText"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage>
     <ContentPage
         Title="Profile"
         BackgroundImageSource="mainprofim.png"
-        IconImageSource="profileim.png" />
+        IconImageSource="profileim.png">
+        <StackLayout>
+            <Frame BackgroundColor="#373737" CornerRadius="0">
+                <Label TextColor="#B4B4B4" Text="Личный профиль" FontSize="18" HorizontalOptions="CenterAndExpand"/>
+            </Frame>
+
+            <Image x:Name="profph" HeightRequest="90" Margin="130,100, 130, 0" />
+            <Frame BackgroundColor="#373737" HeightRequest="350" CornerRadius="0">
+                <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label x:Name="surnamelab"  TextColor="White" FontSize="20" HorizontalOptions="EndAndExpand" FontAttributes="Bold"/>
+                    <Label x:Name="namelab" TextColor="White" FontSize="20" HorizontalOptions="StartAndExpand" FontAttributes="Bold"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="0,20">
+                        <Label Text="Login:"  TextColor="White" FontSize="20" HorizontalOptions="StartAndExpand" FontAttributes="Bold"/>
+                        <Label x:Name="login" TextColor="White" FontSize="20" HorizontalOptions="StartAndExpand" FontAttributes="Bold"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="0,20">
+                        <Label Text="Password:"  TextColor="White" FontSize="20" HorizontalOptions="StartAndExpand" FontAttributes="Bold"/>
+                        <Label x:Name="pass" TextColor="White" FontSize="20" HorizontalOptions="StartAndExpand" FontAttributes="Bold"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage>
 </TabbedPage>

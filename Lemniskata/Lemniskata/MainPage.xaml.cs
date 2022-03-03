@@ -41,7 +41,7 @@ namespace Lemniskata
                         else
                         {
                             state = true;
-                            Navigation.PushAsync(new StartPage());
+                            Navigation.PushAsync(new StartPage(item));
                         }
                     }
                 }

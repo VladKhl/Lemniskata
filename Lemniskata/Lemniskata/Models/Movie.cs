@@ -13,7 +13,7 @@ namespace Lemniskata.Models
 
         }
 
-        public Movie(string namefilm, int year, string country, string genre, string duration, string description, string image, string fragment1, string fragment2, string fragment3, string treiler, string linkfilm)
+        public Movie(string namefilm, string year, string country, string genre, string duration, string description, string image, string fragment1, string fragment2, string fragment3, string treiler, string linkfilm)
         {
             Namefilm = namefilm;
             Year = year;
@@ -32,17 +32,29 @@ namespace Lemniskata.Models
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
         [Unique]
+        [NotNull]
         public string Namefilm { get; set; }
-        public int Year { get; set; }
+        [NotNull]
+        public string Year { get; set; }
+        [NotNull]
         public string Country { get; set; }
+        [NotNull]
         public string Genre { get; set; }
+        [NotNull]
         public string Duration { get; set; }
+        [NotNull]
         public string Description { get; set; }
+        [NotNull]
         public string Image { get; set; }
+        [NotNull]
         public string Fragment1 { get; set; }
+        [NotNull]
         public string Fragment2 { get; set; }
+        [NotNull]
         public string Fragment3 { get; set; }
+        [NotNull]
         public string Treiler { get; set; }
+        [NotNull]
         public string Linkfilm { get; set; }
 
     }

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lemniskata.Pages.FilmPage"
+             Visual="Material">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Frame BackgroundColor="#525252" CornerRadius="10" Margin="20, 20">
+                    <StackLayout>
+                        <Label x:Name="namefilm" HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="White" FontAttributes="Bold" Margin="0,0,0,10"/>
+                        <Image x:Name="imfilm"  Margin="0,0,0,10" HeightRequest="400" MinimumHeightRequest="400"/>
+                        <Frame CornerRadius="10" BackgroundColor="White">
+                            <StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label FontSize="15"
+                                                Text="Год:"
+                                                TextColor="Black" 
+                                                FontAttributes="Bold"/>
+                                    <Label x:Name="yearlab" FontSize="15"
+                                                TextColor="Black" />
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label FontSize="15"
+                                                Text="Страна:"
+                                                TextColor="Black" 
+                                                FontAttributes="Bold"/>
+                                    <Label FontSize="15"
+                                                x:Name="countrylab"
+                                                TextColor="Black" />
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label FontSize="15"
+                                                Text="Жанр:"
+                                                TextColor="Black" 
+                                                FontAttributes="Bold"/>
+                                    <Label FontSize="15"
+                                                x:Name="janrlab"
+                                                TextColor="Black" />
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label FontSize="15"
+                                                Text="Время"
+                                                TextColor="Black" 
+                                                FontAttributes="Bold"/>
+                                    <Label FontSize="15"
+                                                x:Name="timelab"
+                                                TextColor="Black" />
+                                </StackLayout>
+                                <Label FontSize="15" Margin="0, 20, 0,0"
+                                                Text="Описание:"
+                                                TextColor="Black" 
+                                                FontAttributes="Bold"/>
+                                <Label
+                                                FontSize="10"
+                                                x:Name="decrlab"
+                                                TextColor="Black" 
+                                                FontFamily="RedHatText"/>
+                            </StackLayout>
+                        </Frame>
+                        <Label Text="Фрагменты" FontSize="20" TextColor="White" FontAttributes="Bold"/>
+                        <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+                            <StackLayout Orientation="Horizontal">
+                                <Image x:Name="frag1im" HeightRequest="300" MinimumHeightRequest="300" WidthRequest="300" MinimumWidthRequest="300"/>
+                                <Image x:Name="frag2im" HeightRequest="300" MinimumHeightRequest="300" WidthRequest="300" MinimumWidthRequest="300"/>
+                                <Image x:Name="frag3im" HeightRequest="300" MinimumHeightRequest="300" WidthRequest="300" MinimumWidthRequest="300"/>
+                            </StackLayout>
+                        </ScrollView>
+                        <Label Text="Трейлер" FontSize="20" TextColor="White" FontAttributes="Bold"/>
+                        <WebView
+                         x:Name="treiler"
+                         HeightRequest="200"
+                         MinimumHeightRequest="240"
+                         MinimumWidthRequest="360"
+                         WidthRequest="720" />
+                        <Button
+                        Clicked="linkbtn_Clicked"
+                        Margin="0,20,0,0"
+                        x:Name="linkbtn"
+                        BackgroundColor="#F5F5F5"
+                        BorderColor="#DFDFDF"
+                        BorderWidth="1"
+                        CornerRadius="20"
+                        FontFamily="RedHatText"
+                        FontSize="10"
+                        Text="Смотреть фильм"
+                        TextColor="#8C8C8C" />
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
