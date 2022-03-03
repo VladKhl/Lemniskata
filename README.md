@@ -4,7 +4,6 @@
 
 <p align="center">
 <img src="https://github.com/VladKhl/Lemniskata/blob/master/msg-1556112321-90.jpg" width="80%"></p>
-<img src="https://readme-jokes.vercel.app/api" alt="Jokes Card" />
 
 <h2 align="center">Описание</h2>
 При входе в приложение, будет возможность регистрации и авторизации.
